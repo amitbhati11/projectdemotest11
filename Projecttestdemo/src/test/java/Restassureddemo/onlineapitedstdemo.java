@@ -8,7 +8,7 @@ import io.restassured.http.ContentType;
 public class onlineapitedstdemo {
 	
 	String tokn="f9531e874a767f41890cf5ad8548892812722fc1e0ed8c4efbe2e02891095e8c";
-	//@Test//get
+	@Test//get
 	public void gettestdemo() {
 		baseURI="https://gorest.co.in";
 		

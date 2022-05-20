@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="66.624">
+<testcase classname="Unknown" name="Test login with valid cred." time="16.392">
+<system-out><![CDATA[Given enter the URl.........................................................passed
+And login with valid amit and 12345.........................................passed
+When click on submit button.................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="Test login with invalid cred." time="11.604">
+<failure message="element not interactable&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fd8e577b01b2358e75e22cb717eb5885, clickElement {id=aa684829-d380-4c56-bf0b-53814ff4fa3d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\ADMIN_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64309/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (fd8e577b01b2358e75e22cb717eb5885)] -&gt; xpath: //select[@class='form-control bfh-countries']]&#10;Session ID: fd8e577b01b2358e75e22cb717eb5885" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given enter the URl.........................................................passed
+And login with invalid sumit and 123456.....................................passed
+When click on submit button.................................................passed
+Then navigate to home page..................................................failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd8e577b01b2358e75e22cb717eb5885, clickElement {id=aa684829-d380-4c56-bf0b-53814ff4fa3d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\ADMIN_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64309/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (fd8e577b01b2358e75e22cb717eb5885)] -> xpath: //select[@class='form-control bfh-countries']]
+Session ID: fd8e577b01b2358e75e22cb717eb5885
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at pages.Homepage.addcountry(Homepage.java:40)
+	at Cucumberdemo.Cucumberlogin.navigate_to_home_page(Cucumberlogin.java:63)
+	at ✽.navigate to home page(file:///C:/Users/Admin_SRV/git/projectdemotest11/Projecttestdemo/src/test/resources/Feature/login.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Unknown" name="Test login with valid cred." time="13.027">
+<system-out><![CDATA[Given enter the URl.........................................................passed
+And login with valid shobhakar and 12345....................................passed
+When click on submit button.................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="Test login with invalid cred." time="12.899">
+<failure message="element not interactable&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f72ee1746f981b938259aaef5d4389fb, clickElement {id=30f0c94d-d519-4eac-aec6-69daced9a015}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\ADMIN_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64416/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (f72ee1746f981b938259aaef5d4389fb)] -&gt; xpath: //select[@class='form-control bfh-countries']]&#10;Session ID: f72ee1746f981b938259aaef5d4389fb" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given enter the URl.........................................................passed
+And login with invalid shehzad and 123456...................................passed
+When click on submit button.................................................passed
+Then navigate to home page..................................................failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f72ee1746f981b938259aaef5d4389fb, clickElement {id=30f0c94d-d519-4eac-aec6-69daced9a015}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\ADMIN_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64416/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f72ee1746f981b938259aaef5d4389fb)] -> xpath: //select[@class='form-control bfh-countries']]
+Session ID: f72ee1746f981b938259aaef5d4389fb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at pages.Homepage.addcountry(Homepage.java:40)
+	at Cucumberdemo.Cucumberlogin.navigate_to_home_page(Cucumberlogin.java:63)
+	at ✽.navigate to home page(file:///C:/Users/Admin_SRV/git/projectdemotest11/Projecttestdemo/src/test/resources/Feature/login.feature:41)
+]]></failure>
+</testcase>
+<testcase classname="Unknown" name="Test login with valid cred." time="12.351">
+<system-out><![CDATA[Given enter the URl.........................................................passed
+And login with valid sonali and 12345.......................................passed
+When click on submit button.................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
