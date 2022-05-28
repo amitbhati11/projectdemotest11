@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Testff(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.makemytripflghttest">
+      <class name="tests.Datautilslogindemo">
         <methods>
+          <include name="finaldata"/>
           <include name="setup"/>
-          <include name="testexecution"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- tests.makemytripflghttest -->
+      </class> <!-- tests.Datautilslogindemo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testff(failed) -->
+  <test thread-count="2" name="Testch(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.Datautilslogindemo">
+        <methods>
+          <include name="finaldata"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Datautilslogindemo -->
+    </classes>
+  </test> <!-- Testch(failed) -->
+</suite> <!-- Failed suite [Suite] -->
