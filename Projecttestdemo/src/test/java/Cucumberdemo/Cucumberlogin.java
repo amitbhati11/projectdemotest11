@@ -39,7 +39,6 @@ public class Cucumberlogin {
        
 	}
 
-	
 	@And("^login with invalid (.*) and (.*)$")
 	public void login_with_invalid_username_and_password(String username,String password) throws InterruptedException {
 
